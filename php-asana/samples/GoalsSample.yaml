@@ -1,0 +1,101 @@
+goals:
+    addFollowers: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->addFollowers($goal_gid, array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    createGoal: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->createGoal(array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    createGoalMetric: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->createGoalMetric($goal_gid, array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    deleteGoal: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->deleteGoal($goal_gid, array('opt_pretty' => 'true'))
+    getGoal: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->getGoal($goal_gid, array('param' => 'value', 'param' => 'value'), array('opt_pretty' => 'true'))
+    getGoals: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->getGoals(array('param' => 'value', 'param' => 'value'), array('opt_pretty' => 'true'))
+    getParentGoalsForGoal: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->getParentGoalsForGoal($goal_gid, array('param' => 'value', 'param' => 'value'), array('opt_pretty' => 'true'))
+    removeFollowers: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->removeFollowers($goal_gid, array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    updateGoal: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->updateGoal($goal_gid, array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    updateGoalMetric: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->goals->updateGoalMetric($goal_gid, array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))

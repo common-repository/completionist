@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'asana/asana',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'd765e19e8279f18a23b232177f66c25e35121644',
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'adoy/oauth2' => array(
+            'pretty_version' => '1.3.1',
+            'version' => '1.3.1.0',
+            'reference' => '2f28fc76ad5ad6974333eaf84a3d05164f2ed586',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../adoy/oauth2',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'asana/asana' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'd765e19e8279f18a23b232177f66c25e35121644',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'nategood/httpful' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'reference' => 'ea02c8aedef70b9a453ce97978d9d7c413972f15',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nategood/httpful',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

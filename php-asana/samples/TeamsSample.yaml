@@ -1,0 +1,71 @@
+teams:
+    addUserForTeam: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->teams->addUserForTeam($team_gid, array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    createTeam: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->teams->createTeam(array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    getTeam: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->teams->getTeam($team_gid, array('param' => 'value', 'param' => 'value'), array('opt_pretty' => 'true'))
+    getTeamsForUser: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->teams->getTeamsForUser($user_gid, array('param' => 'value', 'param' => 'value'), array('opt_pretty' => 'true'))
+    getTeamsForWorkspace: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->teams->getTeamsForWorkspace($workspace_gid, array('param' => 'value', 'param' => 'value'), array('opt_pretty' => 'true'))
+    removeUserForTeam: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->teams->removeUserForTeam($team_gid, array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
+    updateTeam: >-
+        <?php
+
+        require 'vendor/autoload.php';
+
+
+        $client = Asana\Client::accessToken('PERSONAL_ACCESS_TOKEN');
+
+
+        $result = $client->teams->updateTeam(array('field' => 'value', 'field' => 'value'), array('opt_pretty' => 'true'))
